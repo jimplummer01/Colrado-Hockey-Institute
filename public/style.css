@@ -1,33 +1,163 @@
-/*
- * Hi! I'm your stylesheet! I've got some sensible defaults here,
- * but feel free to change me to your heart's content!
- */
-
 * {
-  box-sizing: border-box;
-  font-family: arial, sans-serif;
+  color: #505050;
+}
+
+* h1 {
+  color: white;
+  font-family: 'Marcellus SC', serif;
+  font-weight: 100;
 }
 
 body {
-  background: linear-gradient(#ffffff, #c0c0c0);
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  width: 100vw;
+  background-color: #903434;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%
+}
+
+#mainHeader {
+  width: 910px;
+  margin-top: 20px;
+
+}
+
+#slogan {
+  color: white;
+  z-index: 3;
+  position: absolute;
+  bottom: 130px;
+  right: 180px;
+  font-size: 1.75em;
 }
 
 nav {
-  align-items: center;
-  background-color: #333333;
-  color: #c0c0c0;
-  display: flex;
-  height: 80px;
-  padding: 10px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 940px;
 }
 
-main {
-  align-items: center;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+}
+
+#headerImg {
+  width: 900px;
+  border: 15px solid #e5e5e5;
+  box-shadow: 7px 7px 50px rgb(34, 34, 34);
+}
+
+.singlePage {
+  background-color: #e5e5e5;
+  width: 90%;
+  height: 900px;
+  z-index: -1;
+  margin-top: -150px;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+.layout {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 190px;
+}
+
+#productsHeader {
+  background-color: #903434;
+  height: 60px;
+  width: 960px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#productsHeader h1 {
+  color: white;
+  vertical-align: center;
+  font-family: 'Marcellus SC', serif;
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: 1.75em;
+}
+
+.singlePageContent {
+  width: 90%;
+}
+
+h2 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+
+.productText {
+  padding-right: 20px;
+}
+
+.excelDisclaimer {
+  font-size: 12px;
+}
+
+#homeHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 60px;
+  width: 920px;
+}
+
+#homeHeader h1 {
+  color: #505050;
+  font-weight: 100;
+  font-size: 1.75em;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 190px;
+  margin-bottom: 40px;
+}
+
+#headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pageSections {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#pageSections img {
+  margin: 10px;
 }
