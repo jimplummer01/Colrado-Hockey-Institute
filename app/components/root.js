@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Products from './Products'
+import Articles from './Articles'
 
 const Root = () => {
   return (
@@ -14,7 +15,7 @@ const Root = () => {
         <nav>
           <Link to='/'>Home</Link>
           <Link to='/products'>Products</Link>
-          <Link>Articles</Link>
+          <Link to='/articles'>Articles</Link>
           <Link>Blog</Link>
           <Link>Videos</Link>
           <Link>Downloads</Link>
@@ -25,7 +26,8 @@ const Root = () => {
         <h1 id="slogan">Organizing coaches for success</h1>
       </div>
           <Route exact path='/' component={Home} />
-          <Route exact path='/products' component={Products} />      
+          <Route exact path='/products' component={Products} />  
+          <Route exact path='/articles' component={Articles} />   
     </div>
     </BrowserRouter>
   )
